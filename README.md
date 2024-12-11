@@ -2,7 +2,7 @@
 
 ## 1. Updated Application Architecture
 ### Architecture Diagram
-*Include the updated architecture diagram here. You can use Draw.io or a similar tool to create and embed the diagram.*
+![image](https://github.com/user-attachments/assets/db832759-22b0-476f-95ef-d274a71af87e)
 
 ### Application and Architecture Explanation
 The application is a cloud-native microservices solution designed for Best Buy’s online store. The architecture is based on the design principles of the Algonquin Pet Store (On Steroids) with a key modification to use a managed service for the Order Queue (e.g., Azure Service Bus). This architecture allows scalable, independent, and loosely-coupled microservices to run seamlessly in a Kubernetes cluster.
