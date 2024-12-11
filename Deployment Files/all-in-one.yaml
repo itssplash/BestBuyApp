@@ -128,7 +128,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: order-service
+  name: best-buy-orders
 spec:
   replicas: 1 # Single replica
   selector:
@@ -142,8 +142,8 @@ spec:
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
-        - name: order-service
-          image: itssplash/order-service-l8:latest # Custom image for order service
+        - name: best-buy-orders
+          image: itssplash/best-buy-orders:latest # Custom image for order service
           ports:
             - containerPort: 3000 # Order service listens on this port
           env: # Environment variables for configuration
@@ -222,7 +222,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: makeline-service
+  name: best-buy-makeline
 spec:
   replicas: 1 # Single replica
   selector:
@@ -236,8 +236,8 @@ spec:
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
-        - name: makeline-service
-          image: itssplash/makeline-service-l8:latest # Custom Makeline service image
+        - name: best-buy-makeline
+          image: itssplash/best-buy-makeline:latest # Custom Makeline service image
           ports:
             - containerPort: 3001 # Makeline service listens on this port
           env: # Environment variables for configuration
@@ -304,7 +304,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: product-service
+  name: best-buy-products
 spec:
   replicas: 1 # Single replica
   selector:
@@ -318,8 +318,8 @@ spec:
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
-        - name: product-service
-          image: itssplash/product-service-l8:latest # Custom product service image
+        - name: best-buy-products
+          image: itssplash/best-buy-products:latest # Custom product service image
           ports:
             - containerPort: 3002 # Product service listens on this port
           env: # Environment variables for configuration
@@ -365,7 +365,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: store-front
+  name: best-buy-front
 spec:
   replicas: 1
   selector:
@@ -379,8 +379,8 @@ spec:
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
-        - name: store-front
-          image: itssplash/store-front-l8:test # Front-end store application
+        - name: best-buy-front
+          image: itssplash/best-buy-front:latest # Front-end store application
           ports:
             - containerPort: 8080 # Front-end app port
               name: store-front
@@ -435,7 +435,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: store-admin
+  name: best-buy-admin
 spec:
   replicas: 1
   selector:
@@ -449,8 +449,8 @@ spec:
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
-        - name: store-admin
-          image: itssplash/store-admin-l8:test # Admin interface for store
+        - name: best-buy-admin
+          image: itssplash/best-buy-admin:latest # Admin interface for store
           ports:
             - containerPort: 8081 # Admin app port
               name: store-admin
@@ -505,7 +505,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ai-service
+  name: best-buy-aiservice
 spec:
   replicas: 1
   selector:
@@ -519,8 +519,8 @@ spec:
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
-        - name: ai-service
-          image: itssplash/ai-service-l8:latest
+        - name: best-buy-aiservice
+          image: itssplash/best-buy-aiservice:latest
           ports:
             - containerPort: 5001
           env:
