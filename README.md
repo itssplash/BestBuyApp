@@ -23,10 +23,12 @@ The application is a cloud-native microservices solution designed for Best Buyâ€
 - Access to Azure OpenAI Service or OpenAI APIs
 
 ### Deployment Steps
-1. **Clone this repository**:
+## 1. Clone this repository:
    ```bash
-   git clone <repository-link>
-   cd <repository-folder>
+   git clone https://github.com/itssplash/BestBuyApp
+   cd BestBuyApp
+   ```
+   
 ## 2. Deployment Instructions
 ### Prerequisites
 - Kubernetes cluster (e.g., AKS)
@@ -56,20 +58,26 @@ The application is a cloud-native microservices solution designed for Best Buyâ€
 ## 3. Table of Microservice Repositories
 | Service           | Repository Link               |
 |-------------------|--------------------------------|
+| Store-Front       | https://github.com/itssplash/store-front-bestbuy           |
+| Order-Service     | https://github.com/itssplash/order-service-bestbuy             |
+| Product-Service   | https://github.com/itssplash/product-service-bestbuy             |
+| Makeline-Service  | https://github.com/itssplash/makeline-service-bestbuy          |
+| AI-Service        | https://github.com/itssplash/ai-service-bestbuy                 |
+| Store-admin       | https://github.com/itssplash/store-admin-bestbuy                          |
+| Virtual-customer(optional)  | https://github.com/itssplash/virtual-customer-bestbuy |
+| Virtual-worker(optional)  | https://github.com/itssplash/virtual-worker-bestbuy                              |
+
+## 4. Table of Docker Images
+| Service           | Docker Image Link             |
+|-------------------|--------------------------------|
 | Store-Front       | [GitHub Link]                 |
 | Order-Service     | [GitHub Link]                 |
 | Product-Service   | [GitHub Link]                 |
 | Makeline-Service  | [GitHub Link]                 |
 | AI-Service        | [GitHub Link]                 |
-
-## 4. Table of Docker Images
-| Service           | Docker Image Link             |
-|-------------------|--------------------------------|
-| Store-Front       | [Docker Hub Link]             |
-| Order-Service     | [Docker Hub Link]             |
-| Product-Service   | [Docker Hub Link]             |
-| Makeline-Service  | [Docker Hub Link]             |
-| AI-Service        | [Docker Hub Link]             |
+| Store-admin       |                               |
+| Virtual-customer  | [GitHub Link]                 |
+| Virtual-worker    |                               |
 
 ## 5. Demo Video
 Watch the demo video showcasing the application functionality, including AI-powered product descriptions and image generation, and the integration with the managed order queue service: [Demo Video Link]
