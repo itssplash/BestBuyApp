@@ -42,7 +42,6 @@ The application is a cloud-native microservices solution designed for Best Buyâ€
     docker build -t <your-dockerhub-username>/<service-name>:<tag> .
     docker push <your-dockerhub-username>/<service-name>:<tag>
     ```
-
 2. **Configure Kubernetes resources**: Ensure `kubectl` is configured and connected to your cluster. Apply the Kubernetes YAML deployment files:
     ```bash
     kubectl apply -f Deployment-Files/
@@ -59,24 +58,24 @@ The application is a cloud-native microservices solution designed for Best Buyâ€
 ## 3. Table of Microservice Repositories
 | Service           | Repository Link               |
 |-------------------|--------------------------------|
-| Store-Front       | https://github.com/itssplash/store-front-bestbuy           |
-| Order-Service     | https://github.com/itssplash/order-service-bestbuy             |
-| Product-Service   | https://github.com/itssplash/product-service-bestbuy             |
-| Makeline-Service  | https://github.com/itssplash/makeline-service-bestbuy          |
-| AI-Service        | https://github.com/itssplash/ai-service-bestbuy                 |
-| Store-admin       | https://github.com/itssplash/store-admin-bestbuy                          |
+| Store-Front       | https://github.com/itssplash/best-buy-front          |
+| Order-Service     | https://github.com/itssplash/best-buy-orders        |
+| Product-Service   | https://github.com/itssplash/best-buy-products            |
+| Makeline-Service  | https://github.com/itssplash/best-buy-makeline          |
+| AI-Service        | https://github.com/itssplash/best-buy-aiservice                |
+| Store-admin       | https://github.com/itssplash/best-buy-admin   |
 | Virtual-customer(optional)  | https://github.com/itssplash/virtual-customer-bestbuy |
 | Virtual-worker(optional)  | https://github.com/itssplash/virtual-worker-bestbuy                              |
 
 ## 4. Table of Docker Images
 | Service           | Docker Image Link             |
 |-------------------|--------------------------------|
-| Store-Front       | https://hub.docker.com/repository/docker/itssplash/store-front/general             |
-| Order-Service     | https://hub.docker.com/repository/docker/itssplash/order-service-l8/general               |
-| Product-Service   | https://hub.docker.com/repository/docker/itssplash/product-service-l8/general          |
-| Makeline-Service  | https://hub.docker.com/repository/docker/itssplash/makeline-service-l8/general             |
-| AI-Service        | https://hub.docker.com/repository/docker/itssplash/ai-service-l8/general           |
-| Store-admin       | https://hub.docker.com/repository/docker/itssplash/store-admin-l8/general                      |
+| Store-Front       | https://hub.docker.com/repository/docker/itssplash/best-buy-front            |
+| Order-Service     | https://hub.docker.com/repository/docker/itssplash/best-buy-orders              |
+| Product-Service   | https://hub.docker.com/repository/docker/itssplash/best-buy-products         |
+| Makeline-Service  | https://hub.docker.com/repository/docker/itssplash/best-buy-makeline             |
+| AI-Service        | https://hub.docker.com/repository/docker/itssplash/best-buy-aiservice        |
+| Store-admin       | https://hub.docker.com/repository/docker/itssplash/best-buy-admin                     |
 | Virtual-customer  | https://hub.docker.com/repository/docker/itssplash/virtual-customer-l8/general            |
 | Virtual-worker    | https://hub.docker.com/repository/docker/itssplash/virtual-worker-l8/general                      |
 
@@ -85,7 +84,9 @@ Watch the demo video showcasing the application functionality, including AI-powe
 
 
 ### CI/CD Pipeline Implementation (Bonus)
-- I have implemented a CI/CD pipeline for each microservice. You can check the Actions tab in the GitHub repository for each service or review the ci_cd.yaml workflow file in the respective repository.
+- I have implemented a CI/CD pipeline for each microservice.
+- You can check the Actions tab in the GitHub repository for each service or review the
+ci_cd.yaml workflow file in the respective repository.
 
 ## 6. Known Issues and Limitations
 1. **Connecting Order-Service with RabbitMQ**:  
