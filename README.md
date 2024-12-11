@@ -70,14 +70,14 @@ The application is a cloud-native microservices solution designed for Best Buyâ€
 ## 4. Table of Docker Images
 | Service           | Docker Image Link             |
 |-------------------|--------------------------------|
-| Store-Front       | [GitHub Link]                 |
-| Order-Service     | [GitHub Link]                 |
-| Product-Service   | [GitHub Link]                 |
-| Makeline-Service  | [GitHub Link]                 |
-| AI-Service        | [GitHub Link]                 |
-| Store-admin       |                               |
-| Virtual-customer  | [GitHub Link]                 |
-| Virtual-worker    |                               |
+| Store-Front       | https://hub.docker.com/repository/docker/itssplash/store-front/general             |
+| Order-Service     | https://hub.docker.com/repository/docker/itssplash/order-service-l8/general               |
+| Product-Service   | https://hub.docker.com/repository/docker/itssplash/product-service-l8/general          |
+| Makeline-Service  | https://hub.docker.com/repository/docker/itssplash/makeline-service-l8/general             |
+| AI-Service        | https://hub.docker.com/repository/docker/itssplash/ai-service-l8/general           |
+| Store-admin       | https://hub.docker.com/repository/docker/itssplash/store-admin-l8/general                      |
+| Virtual-customer  | https://hub.docker.com/repository/docker/itssplash/virtual-customer-l8/general            |
+| Virtual-worker    | https://hub.docker.com/repository/docker/itssplash/virtual-worker-l8/general                      |
 
 ## 5. Demo Video
 Watch the demo video showcasing the application functionality, including AI-powered product descriptions and image generation, and the integration with the managed order queue service: [Demo Video Link]
