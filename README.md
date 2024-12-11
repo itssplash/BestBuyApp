@@ -84,8 +84,7 @@ Watch the demo video showcasing the application functionality, including AI-powe
 
 
 ### CI/CD Pipeline Implementation (Bonus)
-- Set up a CI/CD pipeline for each microservice using GitHub Actions or Azure DevOps.
-- Automate the build, test, and deployment processes to ensure continuous integration and continuous deployment.
+- I have implemented a CI/CD pipeline for each microservice. You can check the Actions tab in the GitHub repository for each service or review the ci_cd.yaml workflow file in the respective repository.
 
 ## 6. Known Issues and Limitations
 1. **Connecting Order-Service with RabbitMQ**:  
