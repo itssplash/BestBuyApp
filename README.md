@@ -80,18 +80,43 @@ The application is a cloud-native microservices solution designed for Best Buyâ€
 | Virtual-worker    | https://hub.docker.com/repository/docker/itssplash/virtual-worker-l8/general                      |
 
 ## 5. Demo Video
-Watch the demo video showcasing the application functionality, including AI-powered product descriptions and image generation, and the integration with the managed order queue service: [Demo Video Link]
+Watch the demo video showcasing the application functionality, including AI-powered product descriptions and image generation, and the integration with the managed order queue service: [[Demo Video Link]](https://algonquinlivecom-my.sharepoint.com/:v:/g/personal/abhi0012_algonquinlive_com/EazYQaGhYMpEnriSo1_tK7YBFjX2e3Jsr30mNRWp-cix2w?e=Zt6OVM&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-## 6. Optional Task: CI/CD Pipeline
-*Note: The professor has mentioned that RabbitMQ should be used if Azure Service Bus is not functional. Implementing the optional CI/CD task will result in full marks for the assignment.*
 
 ### CI/CD Pipeline Implementation (Bonus)
 - Set up a CI/CD pipeline for each microservice using GitHub Actions or Azure DevOps.
 - Automate the build, test, and deployment processes to ensure continuous integration and continuous deployment.
 
-## 7. Known Issues and Limitations (Optional)
-*List any issues or limitations you encountered during development.*
+## 6. Known Issues and Limitations
+1. **Connecting Order-Service with RabbitMQ**:  
+   Establishing a seamless connection between the Order-Service and RabbitMQ required troubleshooting authentication and connection settings. Ensuring message delivery reliability was also a significant task, especially during high workloads.
 
-## 8. Additional Notes
+2. **Integrating Makeline-Service with RabbitMQ**:  
+   The Makeline-Service faced issues processing messages from RabbitMQ due to configuration mismatches and handling message retries for failed deliveries. Debugging these issues consumed additional time during development.
+
+3. **AI Integration**:  
+   - Integrating GPT-4 and DALL-E with the Azure OpenAI Service required managing API keys securely and ensuring that API quotas and limits were not exceeded during testing.  
+   - Generating product descriptions and images for a large dataset demanded efficient use of resources and rate-limiting strategies.
+
+4. **Kubernetes Deployment**:  
+   Deploying the application on Kubernetes was complex due to the need to configure multiple microservices, StatefulSets, ConfigMaps, and Secrets. Ensuring communication between services within the cluster required careful setup of networking rules and service discovery.
+
+5. **Handling Secrets and Sensitive Data**:  
+   Managing sensitive information like API keys, database credentials, and RabbitMQ connection details securely using Kubernetes Secrets required thorough attention to detail to prevent unintentional leaks.
+
+6. **Service Reliability in Kubernetes**:  
+   - Encountered challenges in scaling services while maintaining consistent performance across multiple replicas.  
+   - Implementing health checks for services to ensure self-healing in the event of a failure required additional testing and configuration.
+
+7. **CI/CD Pipeline Setup (Optional Task)**:  
+   - Automating builds and deployments for each microservice introduced complexity in managing pipeline configurations.  
+   - Debugging failed builds or deployments in the CI/CD workflow required significant effort, especially for Kubernetes deployment steps.
+
+### Known Limitations
+- The applicationâ€™s current implementation is dependent on Azure OpenAI Service or OpenAI APIs, which might incur additional costs or encounter rate limits during heavy usage.  
+- RabbitMQ is used as a fallback for Azure Service Bus; however, this may not fully replicate the scalability and management features offered by a cloud-managed service.  
+- MongoDB StatefulSet might face challenges during high scalability requirements due to its design limitations in Kubernetes.
+
+## 7. Additional Notes
 - Ensure you have configured your application with ConfigMaps and Secrets to manage configurations securely.
 - The `AI-Service` utilizes the Azure OpenAI Service to interface with GPT-4 and DALL-E for generating AI-based content.
