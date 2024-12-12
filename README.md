@@ -58,24 +58,24 @@ The application is a cloud-native microservices solution designed for Best Buyâ€
 ## 3. Table of Microservice Repositories
 | Service           | Repository Link               |
 |-------------------|--------------------------------|
-| Store-Front       | https://github.com/itssplash/best-buy-front          |
-| Order-Service     | https://github.com/itssplash/best-buy-orders        |
-| Product-Service   | https://github.com/itssplash/best-buy-products            |
-| Makeline-Service  | https://github.com/itssplash/best-buy-makeline          |
-| AI-Service        | https://github.com/itssplash/best-buy-aiservice                |
-| Store-admin       | https://github.com/itssplash/best-buy-admin   |
+| Best Buy-Front       | https://github.com/itssplash/best-buy-front          |
+| Best-Buy-Orders    | https://github.com/itssplash/best-buy-orders        |
+| Best-Buy-Products   | https://github.com/itssplash/best-buy-products            |
+| Best-Buy-Makeline | https://github.com/itssplash/best-buy-makeline          |
+| Best-Buy-AIService        | https://github.com/itssplash/best-buy-aiservice                |
+| Best-Buy-Admin       | https://github.com/itssplash/best-buy-admin   |
 | Virtual-customer(optional)  | https://github.com/itssplash/virtual-customer-bestbuy |
 | Virtual-worker(optional)  | https://github.com/itssplash/virtual-worker-bestbuy                              |
 
 ## 4. Table of Docker Images
 | Service           | Docker Image Link             |
 |-------------------|--------------------------------|
-| Store-Front       | https://hub.docker.com/repository/docker/itssplash/best-buy-front            |
-| Order-Service     | https://hub.docker.com/repository/docker/itssplash/best-buy-orders              |
-| Product-Service   | https://hub.docker.com/repository/docker/itssplash/best-buy-products         |
-| Makeline-Service  | https://hub.docker.com/repository/docker/itssplash/best-buy-makeline             |
-| AI-Service        | https://hub.docker.com/repository/docker/itssplash/best-buy-aiservice        |
-| Store-admin       | https://hub.docker.com/repository/docker/itssplash/best-buy-admin                     |
+| Best Buy-Front      | https://hub.docker.com/repository/docker/itssplash/best-buy-front            |
+| Best-Buy-Orders     | https://hub.docker.com/repository/docker/itssplash/best-buy-orders              |
+| Best-Buy-Products    | https://hub.docker.com/repository/docker/itssplash/best-buy-products         |
+| Best-Buy-Makeline  | https://hub.docker.com/repository/docker/itssplash/best-buy-makeline             |
+| Best-Buy-AIService        | https://hub.docker.com/repository/docker/itssplash/best-buy-aiservice        |
+| Best-Buy-Admin      | https://hub.docker.com/repository/docker/itssplash/best-buy-admin                     |
 | Virtual-customer  | https://hub.docker.com/repository/docker/itssplash/virtual-customer-l8/general            |
 | Virtual-worker    | https://hub.docker.com/repository/docker/itssplash/virtual-worker-l8/general                      |
 
